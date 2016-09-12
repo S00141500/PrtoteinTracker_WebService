@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:ws="http://www.siteminder.com.au/pmsxchange" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ota="http://www.opentravel.org/OTA/2003/05" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:tns="http://www.siteminder.com.au/pmsxchange" targetNamespace="http://www.siteminder.com.au/pmsxchange" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xs:schema targetNamespace="http://www.opentravel.org/OTA/2003/05">
+      <xs:include schemaLocation="../../schema/OTA_AirCommonTypes.xsd" />
+      <xs:include schemaLocation="../../schema/OTA_AirPreferences.xsd" />
+      <xs:include schemaLocation="../../schema/OTA_CommonPrefs.xsd" />
+      <xs:include schemaLocation="../../schema/OTA_CommonTypes.xsd" />
+      <xs:include schemaLocation="../../schema/OTA_CruiseCommonTypes.xsd" />
+      <xs:include schemaLocation="../../schema/OTA_HotelCommonTypes.xsd" />
+      <xs:include schemaLocation="../../schema/OTA_HotelContentDescription.xsd" />
+      <xs:include schemaLocation="../../schema/OTA_HotelPreferences.xsd" />
+      <xs:include schemaLocation="../../schema/OTA_HotelReservation.xsd" />
+      <xs:include schemaLocation="../../schema/OTA_NotifReportRQ.xsd" />
+      <xs:include schemaLocation="../../schema/OTA_NotifReportRS.xsd" />
+      <xs:include schemaLocation="../../schema/OTA_PkgCommonTypes.xsd" />
+      <xs:include schemaLocation="../../schema/OTA_Profile.xsd" />
+      <xs:include schemaLocation="../../schema/OTA_ReadRQ.xsd" />
+      <xs:include schemaLocation="../../schema/OTA_ResRetrieveRS.xsd" />
+      <xs:include schemaLocation="../../schema/OTA_SimpleTypes.xsd" />
+      <xs:include schemaLocation="../../schema/OTA_VehicleCommonTypes.xsd" />
+      <xs:include schemaLocation="../../schema/OTA_VehRetResRQ.xsd" />
+      <xs:include schemaLocation="../../schema/OTA_HotelAvailNotifRQ.xsd" />
+      <xs:include schemaLocation="../../schema/OTA_HotelAvailNotifRS.xsd" />
+      <xs:include schemaLocation="../../schema/OTA_HotelRateAmountNotifRQ.xsd" />
+      <xs:include schemaLocation="../../schema/OTA_HotelRateAmountNotifRS.xsd" />
+      <xs:include schemaLocation="../../schema/OTA_PingRQ.xsd" />
+      <xs:include schemaLocation="../../schema/OTA_PingRS.xsd" />
+    </xs:schema>
+    <xs:schema targetNamespace="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+      <xs:include schemaLocation="../../schema/oasis-200401-wss-wssecurity-secext-1.0.xsd" />
+    </xs:schema>
+    <xs:schema targetNamespace="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+      <xs:include schemaLocation="../../schema/oasis-200401-wss-wssecurity-utility-1.0.xsd" />
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="OTA_ReadRQMessage">
+    <wsdl:part name="Security" element="wsse:Security" />
+    <wsdl:part name="OTA_ReadRQ" element="ota:OTA_ReadRQ" />
+  </wsdl:message>
+  <wsdl:message name="OTA_ResRetrieveRSMessage">
+    <wsdl:part name="OTA_ResRetrieveRS" element="ota:OTA_ResRetrieveRS" />
+  </wsdl:message>
+  <wsdl:message name="OTA_NotifReportRQMessage">
+    <wsdl:part name="Security" element="wsse:Security" />
+    <wsdl:part name="OTA_NotifReportRQ" element="ota:OTA_NotifReportRQ" />
+  </wsdl:message>
+  <wsdl:message name="OTA_NotifReportRSMessage">
+    <wsdl:part name="OTA_NotifReportRS" element="ota:OTA_NotifReportRS" />
+  </wsdl:message>
+  <wsdl:message name="OTA_HotelAvailNotifRQMessage">
+    <wsdl:part name="Security" element="wsse:Security" />
+    <wsdl:part name="OTA_HotelAvailNotifRQ" element="ota:OTA_HotelAvailNotifRQ" />
+  </wsdl:message>
+  <wsdl:message name="OTA_HotelAvailNotifRSMessage">
+    <wsdl:part name="OTA_HotelAvailNotifRS" element="ota:OTA_HotelAvailNotifRS" />
+  </wsdl:message>
+  <wsdl:message name="OTA_HotelRateAmountNotifRQMessage">
+    <wsdl:part name="Security" element="wsse:Security" />
+    <wsdl:part name="OTA_HotelRateAmountNotifRQ" element="ota:OTA_HotelRateAmountNotifRQ" />
+  </wsdl:message>
+  <wsdl:message name="OTA_HotelRateAmountNotifRSMessage">
+    <wsdl:part name="OTA_HotelRateAmountNotifRS" element="ota:OTA_HotelRateAmountNotifRS" />
+  </wsdl:message>
+  <wsdl:message name="OTA_PingRQ">
+    <wsdl:part name="Security" element="wsse:Security" />
+    <wsdl:part name="OTA_PingRQ" element="ota:OTA_PingRQ" />
+  </wsdl:message>
+  <wsdl:message name="OTA_PingRS">
+    <wsdl:part name="Security" element="wsse:Security" />
+    <wsdl:part name="OTA_PingRS" element="ota:OTA_PingRS" />
+  </wsdl:message>
+  <wsdl:portType name="PmsXchangeService">
+    <wsdl:operation name="ReadRQ">
+      <wsdl:input message="tns:OTA_ReadRQMessage" />
+      <wsdl:output message="tns:OTA_ResRetrieveRSMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NotifReportRQ">
+      <wsdl:input message="tns:OTA_NotifReportRQMessage" />
+      <wsdl:output message="tns:OTA_NotifReportRSMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="HotelAvailNotifRQ">
+      <wsdl:input message="tns:OTA_HotelAvailNotifRQMessage" />
+      <wsdl:output message="tns:OTA_HotelAvailNotifRSMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="HotelRateAmountNotifRQ">
+      <wsdl:input message="tns:OTA_HotelRateAmountNotifRQMessage" />
+      <wsdl:output message="tns:OTA_HotelRateAmountNotifRSMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PingRQ">
+      <wsdl:input message="tns:OTA_PingRQ" />
+      <wsdl:output message="tns:OTA_PingRS" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="PmsXchangeServiceSoap11" type="tns:PmsXchangeService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ReadRQ">
+      <soap:operation soapAction="http://www.siteminder.com.au/pmsxchange/ReadRQ" />
+      <wsdl:input>
+        <soap:header message="tns:OTA_ReadRQMessage" part="Security" use="literal" />
+        <soap:body use="literal" parts="OTA_ReadRQ" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" parts="OTA_ResRetrieveRS" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NotifReportRQ">
+      <soap:operation soapAction="http://www.siteminder.com.au/pmsxchange/NotifReportRQ" />
+      <wsdl:input>
+        <soap:header message="tns:OTA_NotifReportRQMessage" part="Security" use="literal" />
+        <soap:body use="literal" parts="OTA_NotifReportRQ" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" parts="OTA_NotifReportRS" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HotelAvailNotifRQ">
+      <soap:operation soapAction="http://www.siteminder.com.au/pmsxchange/HotelAvailNotifRQ" />
+      <wsdl:input>
+        <soap:header message="tns:OTA_HotelAvailNotifRQMessage" part="Security" use="literal" />
+        <soap:body use="literal" parts="OTA_HotelAvailNotifRQ" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" parts="OTA_HotelAvailNotifRS" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HotelRateAmountNotifRQ">
+      <soap:operation soapAction="http://www.siteminder.com.au/pmsxchange/HotelRateAmountNotifRQ" />
+      <wsdl:input>
+        <soap:header message="tns:OTA_HotelRateAmountNotifRQMessage" part="Security" use="literal" />
+        <soap:body use="literal" parts="OTA_HotelRateAmountNotifRQ" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" parts="OTA_HotelRateAmountNotifRS" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PingRQ">
+      <soap:operation soapAction="http://www.siteminder.com.au/pmsxchange/PingRQ" />
+      <wsdl:input>
+        <soap:header message="tns:OTA_PingRQ" part="Security" use="literal" />
+        <soap:body use="literal" parts="OTA_PingRQ" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" parts="OTA_PingRS" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PmsXchangeService">
+    <wsdl:port name="PmsXchangeServicePort" binding="tns:PmsXchangeServiceSoap11">
+      <soap:address location="https://cmtpi.siteminder.com:443/pmsxchangev2/services/123" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="636880f8-3353-4bce-91f9-8b7a17710d0f" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address=" https://cmtpi.siteminder.com/pmsxchangev2/services/123/pmsxchange.wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="OTA2010A.xsd" MetadataType="Schema" ID="ab29fdac-0345-4be6-aa70-869ac777b130" SourceId="1" SourceUrl="https://cmtpi.siteminder.com/pmsxchangev2/schema/OTA_VehRetResRQ.xsd" />
+    <MetadataFile FileName="OTA2010A1.xsd" MetadataType="Schema" ID="91cb3a0d-0a36-4579-a5d6-aaed1f84e5ba" SourceId="1" SourceUrl="https://cmtpi.siteminder.com/pmsxchangev2/schema/OTA_ResRetrieveRS.xsd" />
+    <MetadataFile FileName="OTA2010A2.xsd" MetadataType="Schema" ID="13389674-65ff-48aa-9bad-08c9dcb9f956" SourceId="1" SourceUrl="https://cmtpi.siteminder.com/pmsxchangev2/schema/OTA_HotelAvailNotifRQ.xsd" />
+    <MetadataFile FileName="OTA2010A3.xsd" MetadataType="Schema" ID="2065f67a-160d-4137-a22e-34770ba610e4" SourceId="1" SourceUrl="https://cmtpi.siteminder.com/pmsxchangev2/schema/OTA_HotelAvailNotifRS.xsd" />
+    <MetadataFile FileName="OTA2003A2010A.xsd" MetadataType="Schema" ID="4b859f60-8814-4f55-96af-e846ba072d07" SourceId="1" SourceUrl="https://cmtpi.siteminder.com/pmsxchangev2/schema/OTA_HotelPreferences.xsd" />
+    <MetadataFile FileName="OTA2003A2010A1.xsd" MetadataType="Schema" ID="03c27689-b052-44ce-8a56-1383c3a3acfa" SourceId="1" SourceUrl="https://cmtpi.siteminder.com/pmsxchangev2/schema/OTA_AirPreferences.xsd" />
+    <MetadataFile FileName="OTA2005B2010A.xsd" MetadataType="Schema" ID="d1c20a96-fa49-4d97-be2c-617f856c209c" SourceId="1" SourceUrl="https://cmtpi.siteminder.com/pmsxchangev2/schema/OTA_CruiseCommonTypes.xsd" />
+    <MetadataFile FileName="pmsxchange.wsdl" MetadataType="Wsdl" ID="7f6be1f2-2f42-453a-8baf-be9e6bce805a" SourceId="1" SourceUrl="https://cmtpi.siteminder.com/pmsxchangev2/services/123/pmsxchange.wsdl" />
+    <MetadataFile FileName="OTA2003A2008B.xsd" MetadataType="Schema" ID="23667a4a-397c-4961-89f2-896fcea28dd9" SourceId="1" SourceUrl="https://cmtpi.siteminder.com/pmsxchangev2/schema/OTA_HotelContentDescription.xsd" />
+    <MetadataFile FileName="OTA2003A2010A2.xsd" MetadataType="Schema" ID="38085ee9-3b5e-415a-bfc7-0a532866f753" SourceId="1" SourceUrl="https://cmtpi.siteminder.com/pmsxchangev2/schema/OTA_HotelCommonTypes.xsd" />
+    <MetadataFile FileName="OTA2003A2010A3.xsd" MetadataType="Schema" ID="ecba1bf1-4ffb-4fe1-a905-9a73a5209ba8" SourceId="1" SourceUrl="https://cmtpi.siteminder.com/pmsxchangev2/schema/OTA_PkgCommonTypes.xsd" />
+    <MetadataFile FileName="oasis-200401-wss-wssecurity-utility-1.xsd" MetadataType="Schema" ID="52d7991b-c4af-43a7-97eb-c66c4737a6a5" SourceId="1" SourceUrl="https://cmtpi.siteminder.com/pmsxchangev2/schema/oasis-200401-wss-wssecurity-utility-1.0.xsd" />
+    <MetadataFile FileName="OTA2003A2010A4.xsd" MetadataType="Schema" ID="fac887b3-fdfe-46a4-a60e-6bfeed06ada8" SourceId="1" SourceUrl="https://cmtpi.siteminder.com/pmsxchangev2/schema/OTA_CommonPrefs.xsd" />
+    <MetadataFile FileName="OTA2003A2010A5.xsd" MetadataType="Schema" ID="379eba87-5191-4c71-92d1-c593ebda479b" SourceId="1" SourceUrl="https://cmtpi.siteminder.com/pmsxchangev2/schema/OTA_SimpleTypes.xsd" />
+    <MetadataFile FileName="OTA2010A4.xsd" MetadataType="Schema" ID="da7d0c60-0278-4aaa-920a-8310dbee6fc9" SourceId="1" SourceUrl="https://cmtpi.siteminder.com/pmsxchangev2/schema/OTA_HotelRateAmountNotifRS.xsd" />
+    <MetadataFile FileName="OTA2010A5.xsd" MetadataType="Schema" ID="4b82164a-f2f7-4a81-b8ce-26ac1d4dee27" SourceId="1" SourceUrl="https://cmtpi.siteminder.com/pmsxchangev2/schema/OTA_PingRS.xsd" />
+    <MetadataFile FileName="OTA2010A6.xsd" MetadataType="Schema" ID="68393d4a-1ba1-4fe7-baa7-e918f2f96858" SourceId="1" SourceUrl="https://cmtpi.siteminder.com/pmsxchangev2/schema/OTA_HotelRateAmountNotifRQ.xsd" />
+    <MetadataFile FileName="OTA2003A2010A6.xsd" MetadataType="Schema" ID="17fbd370-075d-41af-97f4-ac9d44b686a5" SourceId="1" SourceUrl="https://cmtpi.siteminder.com/pmsxchangev2/schema/OTA_VehicleCommonTypes.xsd" />
+    <MetadataFile FileName="OTA2010A7.xsd" MetadataType="Schema" ID="e0aca7d8-b323-41fe-80b9-60fec648fb46" SourceId="1" SourceUrl="https://cmtpi.siteminder.com/pmsxchangev2/schema/OTA_PingRQ.xsd" />
+    <MetadataFile FileName="OTA2003A2010A7.xsd" MetadataType="Schema" ID="7e2892ed-6982-452b-8e68-9a8ed07ce8da" SourceId="1" SourceUrl="https://cmtpi.siteminder.com/pmsxchangev2/schema/OTA_Profile.xsd" />
+    <MetadataFile FileName="OTA2003A2010A8.xsd" MetadataType="Schema" ID="266e0331-70a7-4537-a360-a87b5e87e841" SourceId="1" SourceUrl="https://cmtpi.siteminder.com/pmsxchangev2/schema/OTA_CommonTypes.xsd" />
+    <MetadataFile FileName="OTA2008B.xsd" MetadataType="Schema" ID="ff6ef821-d1e4-4093-a6c5-c5a1d41b0e2d" SourceId="1" SourceUrl="https://cmtpi.siteminder.com/pmsxchangev2/schema/OTA_NotifReportRQ.xsd" />
+    <MetadataFile FileName="OTA2010A8.xsd" MetadataType="Schema" ID="0738b8a3-a97b-4788-a89a-fee31c6a06aa" SourceId="1" SourceUrl="https://cmtpi.siteminder.com/pmsxchangev2/schema/OTA_ReadRQ.xsd" />
+    <MetadataFile FileName="OTA2003A2010A9.xsd" MetadataType="Schema" ID="b3d2d1d3-eb42-45cd-819a-60ec86a4ac52" SourceId="1" SourceUrl="https://cmtpi.siteminder.com/pmsxchangev2/schema/OTA_AirCommonTypes.xsd" />
+    <MetadataFile FileName="oasis-200401-wss-wssecurity-secext-1.xsd" MetadataType="Schema" ID="0ca20232-01d9-4cba-ada7-0261766946f4" SourceId="1" SourceUrl="https://cmtpi.siteminder.com/pmsxchangev2/schema/oasis-200401-wss-wssecurity-secext-1.0.xsd" />
+    <MetadataFile FileName="OTA2008B1.xsd" MetadataType="Schema" ID="42eec34c-0c53-4a44-94b3-abcab88ea12a" SourceId="1" SourceUrl="https://cmtpi.siteminder.com/pmsxchangev2/schema/OTA_NotifReportRS.xsd" />
+    <MetadataFile FileName="OTA2003A2010A10.xsd" MetadataType="Schema" ID="376ab4e1-5f88-462d-9e6e-b194a721f4de" SourceId="1" SourceUrl="https://cmtpi.siteminder.com/pmsxchangev2/schema/OTA_HotelReservation.xsd" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

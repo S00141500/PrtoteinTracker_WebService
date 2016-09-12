@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="ProteinTracker_WebService.ProteinTrackingService" CodeBehind="ProteinTrackerWCF.svc.cs" %>

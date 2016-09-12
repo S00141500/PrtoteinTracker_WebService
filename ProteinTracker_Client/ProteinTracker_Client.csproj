@@ -1,0 +1,365 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C610B019-A5CE-4AEE-846B-ECF81361926B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProteinTracker_Client</RootNamespace>
+    <AssemblyName>ProteinTracker_Client</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ProteinTrackerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProteinTrackerForm.Designer.cs">
+      <DependentUpon>ProteinTrackerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\ProteinTrackerService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServiceReference1\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServiceReference2\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServiceReference3\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServiceReference4\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServiceReference5\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ProteinTrackerForm.resx">
+      <DependentUpon>ProteinTrackerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Service References\ProteinTrackerService\ProteinTracker_Client.ProteinTrackerService.AddProteinResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProteinTrackerService\ProteinTracker_Client.ProteinTrackerService.User.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ProteinTrackerService\ProteinTrackingService.wsdl" />
+    <None Include="Service References\ServiceReference1\oasis-200401-wss-wssecurity-secext-1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference1\oasis-200401-wss-wssecurity-utility-1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference1\OTA2003A2008B.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference1\OTA2003A2010A.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference1\OTA2003A2010A1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference1\OTA2003A2010A10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference1\OTA2003A2010A2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference1\OTA2003A2010A3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference1\OTA2003A2010A4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference1\OTA2003A2010A5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference1\OTA2003A2010A6.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference1\OTA2003A2010A7.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference1\OTA2003A2010A8.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference1\OTA2003A2010A9.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference1\OTA2005B2010A.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference1\OTA2008B.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference1\OTA2008B1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference1\OTA2010A.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference1\OTA2010A1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference1\OTA2010A2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference1\OTA2010A3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference1\OTA2010A4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference1\OTA2010A5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference1\OTA2010A6.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference1\OTA2010A7.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference1\OTA2010A8.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference1\pmsxchange.wsdl" />
+    <None Include="Service References\ServiceReference2\ProteinTracker_Client.ServiceReference2.HotelAvailNotifRQResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference2\ProteinTracker_Client.ServiceReference2.HotelAvailRQResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference2\ProteinTracker_Client.ServiceReference2.HotelRateAmountNotifRQResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference2\ProteinTracker_Client.ServiceReference2.MessageAcknowledgementType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference2\ProteinTracker_Client.ServiceReference2.OTA_HotelAvailRS.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference2\SiteminderService.wsdl" />
+    <None Include="Service References\ServiceReference3\ProteinTracker_Client.ServiceReference3.HotelAvailNotifRQResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference3\ProteinTracker_Client.ServiceReference3.HotelAvailRQResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference3\ProteinTracker_Client.ServiceReference3.HotelRateAmountNotifRQResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference3\ProteinTracker_Client.ServiceReference3.MessageAcknowledgementType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference3\ProteinTracker_Client.ServiceReference3.OTA_HotelAvailRS.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference3\SiteminderService.wsdl" />
+    <None Include="Service References\ServiceReference4\ProteinTracker_Client.ServiceReference4.HotelAvailNotifRQResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference4\ProteinTracker_Client.ServiceReference4.HotelAvailRQResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference4\ProteinTracker_Client.ServiceReference4.HotelRateAmountNotifRQResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference4\ProteinTracker_Client.ServiceReference4.MessageAcknowledgementType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference4\ProteinTracker_Client.ServiceReference4.OTA_HotelAvailRS.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference4\SiteminderService.wsdl" />
+    <None Include="Service References\ServiceReference5\pmsxchange_flat.wsdl" />
+    <None Include="Service References\ServiceReference5\ProteinTracker_Client.ServiceReference5.HotelAvailNotifRQResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference5\ProteinTracker_Client.ServiceReference5.HotelRateAmountNotifRQResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference5\ProteinTracker_Client.ServiceReference5.MessageAcknowledgementType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference5\ProteinTracker_Client.ServiceReference5.NotifReportRQResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference5\ProteinTracker_Client.ServiceReference5.OTA_PingRS.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference5\ProteinTracker_Client.ServiceReference5.OTA_ResRetrieveRS.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference5\ProteinTracker_Client.ServiceReference5.PingRQResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference5\ProteinTracker_Client.ServiceReference5.ReadRQResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\ProteinTrackerService\" />
+    <WCFMetadataStorage Include="Service References\ServiceReference1\" />
+    <WCFMetadataStorage Include="Service References\ServiceReference2\" />
+    <WCFMetadataStorage Include="Service References\ServiceReference3\" />
+    <WCFMetadataStorage Include="Service References\ServiceReference4\" />
+    <WCFMetadataStorage Include="Service References\ServiceReference5\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ProteinTrackerService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ProteinTrackerService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ProteinTrackerService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReference1\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReference1\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReference1\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReference2\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReference2\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReference2\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReference3\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReference3\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReference3\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReference4\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReference4\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReference4\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReference5\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReference5\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReference5\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
